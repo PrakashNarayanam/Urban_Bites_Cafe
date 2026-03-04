@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bites Café | Taste the Real Flavor</title>
+    <meta name="description"
+        content="Premium modern cafe experience with the freshest ingredients and culinary excellence.">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme">
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">URBAN<span>BITES.</span></a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#categories" class="nav-item">Menu</a>
+                <a href="#masterpieces" class="nav-item">Masterpieces</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#offers" class="nav-item">Offers</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-glow order-btn">Order Now</button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-shapes">
+                <div class="shape s-1"></div>
+                <div class="shape s-2"></div>
+            </div>
+            <div class="container hero-wrapper">
+                <div class="hero-content">
+                    <span class="hero-badge">Exquisite Culinary Art</span>
+                    <h1 class="hero-title">Taste the <br><span class="gradient-text">Real Flavor</span></h1>
+                    <p class="hero-subtitle">Discover a sanctuary of taste where every bite tells a story of
+                        craftsmanship, freshness, and pure culinary passion.</p>
+                    <div class="hero-btns">
+                        <a href="#items" class="btn btn-primary">Explore Items</a>
+                        <a href="#" class="btn btn-secondary">Order Now</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800"
+                            alt="Floating Burger" class="floating-img burger-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800"
+                            alt="Floating Pizza" class="floating-img pizza-img">
+                        <div class="visual-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Category Section -->
+        <section class="items" id="categories">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="eyebrow">Our Masterpieces</span>
+                    <h2 class="section-title">Curated For Excellence</h2>
+                </div>
+
+                <!-- Infinite Category Carousel -->
+                <div class="carousel-container">
+                    <div class="infinite-track">
+                        <!-- Burger -->
+                        <div class="cat-card" data-cat="burger">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=800"
+                                    alt="Burgers">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Burgers</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pizza -->
+                        <div class="cat-card" data-cat="pizza">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=800"
+                                    alt="Pizzas">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Pizzas</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desserts -->
+                        <div class="cat-card" data-cat="dessert">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800"
+                                    alt="Desserts">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Desserts</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fast Food -->
+                        <div class="cat-card" data-cat="fastfood">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c170db76?q=80&w=800"
+                                    alt="Fast Food">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Sides</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sandwich -->
+                        <div class="cat-card" data-cat="sandwich">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?q=80&w=800"
+                                    alt="Sandwich">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Sandwiches</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shawarma -->
+                        <div class="cat-card" data-cat="shawarma">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1561529900-5c66e9c60e0a?q=80&w=800"
+                                    alt="Shawarma">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Lebanese</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indian -->
+                        <div class="cat-card" data-cat="indian">
+                            <div class="cat-visual">
+                                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800"
+                                    alt="Indian">
+                            </div>
+                            <div class="cat-info">
+                                <h3>Indian Food</h3>
+                                <div class="view-list-btn">
+                                    <span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Loop Clones (Full set for seamless transition) -->
+                        <div class="cat-card" data-cat="burger">
+                            <div class="cat-visual"><img
+                                    src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=800"
+                                    alt="Burgers"></div>
+                            <div class="cat-info">
+                                <h3>Burgers</h3>
+                                <div class="view-list-btn"><span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-card" data-cat="pizza">
+                            <div class="cat-visual"><img
+                                    src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=800"
+                                    alt="Pizzas"></div>
+                            <div class="cat-info">
+                                <h3>Pizzas</h3>
+                                <div class="view-list-btn"><span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-card" data-cat="dessert">
+                            <div class="cat-visual"><img
+                                    src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800"
+                                    alt="Desserts"></div>
+                            <div class="cat-info">
+                                <h3>Desserts</h3>
+                                <div class="view-list-btn"><span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-card" data-cat="fastfood">
+                            <div class="cat-visual"><img
+                                    src="https://images.unsplash.com/photo-1534422298391-e4f8c170db76?q=80&w=800"
+                                    alt="Fast Food"></div>
+                            <div class="cat-info">
+                                <h3>Sides</h3>
+                                <div class="view-list-btn"><span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indian Clone -->
+                        <div class="cat-card" data-cat="indian">
+                            <div class="cat-visual"><img
+                                    src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800"
+                                    alt="Indian"></div>
+                            <div class="cat-info">
+                                <h3>Indian Food</h3>
+                                <div class="view-list-btn"><span>View Collection</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today's Masterpieces Section -->
+        <section class="masterpieces-section" id="masterpieces">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="eyebrow">Chef's Selection</span>
+                    <h2 class="section-title">Today's <span class="gradient-text">Masterpieces</span></h2>
+                </div>
+
+                <div class="food-grid">
+                    <!-- Item 1: Butter Chicken -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1603894584202-7cc8702144dd?q=80&w=800"
+                                alt="Butter Chicken Deluxe">
+                            <div class="card-tag">20% OFF TODAY</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">Heritage Curry</span>
+                                <div class="card-rating">★ 4.9</div>
+                            </div>
+                            <h3>Butter Chicken Deluxe</h3>
+                            <p>Slow-cooked clay oven chicken in a velvet tomato gravy. A Friday tradition perfected over
+                                decades.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹420</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Biryani -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800"
+                                alt="Hyderabadi Dum Biryani">
+                            <div class="card-tag">15% OFF TODAY</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">Royal Rice</span>
+                                <div class="card-rating">★ 5.0</div>
+                            </div>
+                            <h3>Hyderabadi Dum Biryani</h3>
+                            <p>Fragrant Basmati rice and tender meat slow-cooked in a sealed handi for 6 hours. Royal
+                                taste in every grain.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹550</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Paneer Tikka -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=800"
+                                alt="Paneer Tikka Platter">
+                            <div class="card-tag">BESTSELLER</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">Tandoor Special</span>
+                                <div class="card-rating">★ 4.8</div>
+                            </div>
+                            <h3>Royal Paneer Tikka</h3>
+                            <p>Char-grilled cottage cheese cubes marinated in our secret 12-spice blend. Smoky, spicy,
+                                and irresistible.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹380</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Dosa -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=800"
+                                alt="Masala Dosa Supreme">
+                            <div class="card-tag">CHEF'S SPECIAL</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">Southern Charm</span>
+                                <div class="card-rating">★ 4.7</div>
+                            </div>
+                            <h3>Masala Dosa Supreme</h3>
+                            <p>Crispy golden crepe with spiced potato filling. Served today with our signature artisanal
+                                coconut chutney.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹240</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Dal Makhani -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1626074353765-517a631e40fb?q=80&w=800"
+                                alt="Dal Makhani Royal">
+                            <div class="card-tag">10% OFF TODAY</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">Punjabi Soul</span>
+                                <div class="card-rating">★ 4.9</div>
+                            </div>
+                            <h3>Dal Makhani Royal</h3>
+                            <p>A 24-hour slow-cooked black lentil masterpiece finished with hand-churned white butter.
+                                Pure comfort.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹320</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Fusion Dessert -->
+                    <div class="food-card" data-category="indian">
+                        <div class="card-visual-frame">
+                            <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?q=80&w=800"
+                                alt="Gulab Jamun Fusion">
+                            <div class="card-tag">NEW ARRIVAL</div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-meta-top">
+                                <span class="card-cat">East meets West</span>
+                                <div class="card-rating">★ 5.0</div>
+                            </div>
+                            <h3>Gulab Jamun Fusion</h3>
+                            <p>Our daring masterpiece: classic warm Gulab Jamuns embedded in a silky Philadelphia
+                                cheesecake. Today's must-try.</p>
+                            <div class="card-bottom">
+                                <span class="card-price">₹450</span>
+                                <button class="add-cart-mini">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail Modal -->
+        <div class="detail-modal" id="detail-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content-glass">
+                <button class="close-modal">&times;</button>
+                <div class="modal-grid">
+                    <div class="modal-list-side">
+                        <h2 id="modal-cat-title">Category</h2>
+                        <div class="item-list" id="modal-item-list"></div>
+                    </div>
+                    <div class="modal-info-side">
+                        <div id="item-details-display" class="details-view default">
+                            <div class="detail-img-frame">
+                                <img src="" alt="" id="detail-main-img">
+                            </div>
+                            <div class="detail-text">
+                                <h3 id="detail-name">Select an Item</h3>
+                                <p id="detail-desc" class="desc">Take a seat and explore our gourmet selection.</p>
+                                <div class="detail-meta">
+                                    <div class="meta-box">
+                                        <label>Taste Profile</label>
+                                        <p id="detail-taste">-</p>
+                                    </div>
+                                    <div class="meta-box">
+                                        <label>Ingredients</label>
+                                        <p id="detail-ingredients">-</p>
+                                    </div>
+                                </div>
+                                <div class="detail-price-box">
+                                    <span id="detail-price"></span>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offers Section - Redesigned for Premium Impact -->
+        <section class="offers" id="offers">
+            <div class="container">
+                <div class="offer-banner-prime">
+                    <div class="offer-visual-modern">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800"
+                            alt="Special Offer" class="offer-img-main">
+                        <div class="offer-badge-float">-45%</div>
+                    </div>
+                    <div class="offer-content-modern">
+                        <span class="eyebrow">Limited Time Ritual</span>
+                        <h2 class="offer-title-modern">The Midnight <br><span class="gradient-text">Gourmet Feast</span>
+                        </h2>
+                        <p class="offer-text-modern">Unlock exclusive access to our handcrafted nighttime specials.
+                            Available only every weekend from 10 PM. Experience culinary magic under the neon glow.</p>
+                        <div class="offer-footer">
+                            <button class="btn btn-primary btn-glow">Claim Your Seat</button>
+                            <span class="offer-timer">Ends in: 04h 22m 10s</span>
+                        </div>
+                    </div>
+                    <div class="offer-glow-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container about-wrapper">
+                <div class="about-visual reveal-left">
+                    <div class="about-img-frame">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800"
+                            alt="Our Kitchen">
+                        <div class="img-badge">Est. 2019</div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="eyebrow">The Urban Story</span>
+                    <h2 class="section-title">Redefining the <br>Cafe Experience</h2>
+                    <p>Urban Bites Café was born from a desire to merge high-end culinary techniques with the casual
+                        comfort of a neighborhood cafe. We believe in transparency, local sourcing, and the art of
+                        flavor.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="5000">0</h4>
+                            <span>Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="50">0</h4>
+                            <span>Food Items</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="counter" data-target="5">0</h4>
+                            <span>Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="eyebrow">Wall of Love</span>
+                    <h2 class="section-title">What Our Guests Say</h2>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="t-rating">★★★★★</div>
+                            <p class="t-text">"The Urban Beast is hands down the best burger I've ever had. The truffle
+                                aioli is a game changer. The aesthetic of the cafe is just the cherry on top."</p>
+                            <div class="t-user">
+                                <div class="user-info">
+                                    <h5>Mark Sterling</h5>
+                                    <span>Food Critic</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="t-rating">★★★★★</div>
+                            <p class="t-text">"Minimalist design, premium quality food, and lightning fast service.
+                                Urban Bites is my go-to spot for business meetings and weekend brunches."</p>
+                            <div class="t-user">
+                                <div class="user-info">
+                                    <h5>Sarah Jenkins</h5>
+                                    <span>Entrepreneur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="t-rating">★★★★★</div>
+                            <p class="t-text">"Finally a place that takes shawarma to a fine-dining level. That garlic
+                                toum is legendary. I highly recommend the Royal Garlic Wrap!"</p>
+                            <div class="t-user">
+                                <div class="user-info">
+                                    <h5>David Chen</h5>
+                                    <span>Chef de Cuisine</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container contact-wrapper">
+                <div class="contact-form-side">
+                    <h2 class="section-title">Reach Out</h2>
+                    <p>Have a question or a feedback? We'd love to hear from you.</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-glow">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info-side">
+                    <div class="info-card">
+                        <div class="map-placeholder">
+                            <div class="map-overlay">
+                                <span class="accent-text">Find Us Here</span>
+                                <p>123 Culinary Drive, Urban District</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-main">
+        <div class="container footer-grid-main">
+            <div class="footer-brand">
+                <div class="footer-logo">URBAN<span>BITES.</span></div>
+                <p class="footer-tagline">Crafting gourmet experiences for the modern palate. Every bite tells a story
+                    of passion and precision.</p>
+                <div class="footer-social-new">
+                    <a href="#" class="social-link-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link-btn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Experience</h4>
+                <ul>
+                    <li><a href="#categories">Gourmet Menu</a></li>
+                    <li><a href="#offers">Midnight Feast</a></li>
+                    <li><a href="#masterpieces">Chef's Selection</a></li>
+                    <li><a href="#">Online Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>The Cafe</h4>
+                <ul>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Contact Us</h4>
+                <p>123 Culinary Drive<br>Urban District, NY 10001</p>
+                <p>+91 98765 43210</p>
+                <p>hello@urbanbites.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-flex">
+                    <p>&copy; 2026 <strong>Ranbidge Solutions Private Limited</strong>. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
