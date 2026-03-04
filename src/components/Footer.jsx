@@ -49,7 +49,7 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-bottom-flex">
-                        <p>&copy; 2026 <strong>Ranbise Solutions Private Limited</strong>. All rights reserved.</p>
+                        <p>&copy; 2026 <strong>Ranbide Solutions Private Limited</strong>. All rights reserved.</p>
                         <div className="footer-bottom-links">
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms of Service</a>
